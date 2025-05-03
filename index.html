@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Tanzeem | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav.shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #hero {
+            background-image: url('thumb-1920-1357899.png');
+            background-repeat: no-repeat;
+            color: azure;
+        }
+
+        #hero h1 {
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        #hero p {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-light text-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container" style="font-size: 20px;">
+            <a class="navbar-brand" href="#hero">Mohd Tanzeem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qualification">Qualification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" style="background-color:#000" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-4 fw-bold">Hello</h1>
+        <h1 class="display-4 fw-bold">I'm Mohd Tanzeem</h1>
+        <p class="lead" style="font-size: 20px;">Java Developer | Student | Tech Enthusiast</p>
+        <a href="https://github.com/mohdtanzeem428250" class="btn btn-primary mt-3" style="font-size: 20px;">View My Work</a>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="py-5" style="background-color: #000; color: #fff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Photo and Basic Info -->
+                <div class="col-md-4 text-center mb-4 mb-md-0 mt-4">
+                    <img src="https://avatars.githubusercontent.com/u/178179325?v=4" class="img-fluid rounded"
+                        style="max-width: 200px; border: 5px solid #facc15; transform: translateX(-100px);"
+                        alt="Profile Photo">
+                    <div class="mt-3 text-start" style="font-size:20px">
+                        <p><strong>Name:</strong> Mohd Tanzeem</p>
+                        <p><strong>Job Role:</strong> Java Developer</p>
+                        <p><strong>Experience:</strong> Hands-on project experience</p>
+                        <p><strong>Address:</strong> Bareilly, Uttar Pradesh</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: About and Skills -->
+                <div class="col-md-8" >
+                    <h1 class="fw-bold mb-3  text-center" style="text-decoration:underline;">About Me</h1>
+                    <p style="font-size:20px;">
+                        I am Mohd Tanzeem, a dedicated <span style="font-weight: bold;">Java Developer</span> with hand-on-experience in building dynamic and responsive web application. My skill set include <span style="font-weight: bold;"> HTML, CSS, JavaScript Bootstrap, and MySql along with strong fundation in C, C++, Java, Spring Frameworks, Spring Boot, Spring MVC, Spring Secutiry, Maven, Spring Data JPA, Hibernate. </span> I have a keen interest in integrating modern technologies, especially AI tools like ChatGPT, to build smarter and more efficient solutions.
+                    </p>
+                    <div class="row">
+                        <h1 style="text-align: center;"><b style="text-decoration: underline;">Skills</b></h1>
+                        <div class="col-sm-6" style="font-size:20px">
+                            <p class="mb-1">C<span class="float-end">90%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%"></div>
+                            </div>
+                            <p class="mb-1">C++<span class="float-end">75%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                            </div>
+                            <p class="mb-1">Bootstrap<span class="float-end">25%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="font-size: 20px;">
+                            <p class="mb-1">API Integration<span class="float-end">35%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 35%"></div>
+                            </div>
+                            <p class="mb-1">SQL<span class="float-end">85%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"></div>
+                            </div>
+                            <p class="mb-1">MySQL<span class="float-end">85%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="font-size: 20px;">
+                            <p class="mb-1">Java<span class="float-end">90%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="font-size: 20px;">
+                            <p class="mb-1">Spring Framework<span class="float-end">70%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="font-size: 20px;">
+                            <p class="mb-1">Spring Boot<span class="float-end">70%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="font-size: 20px;">
+                            <p class="mb-1">JavaScript<span class="float-end">40%</span></p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Optional Additional Info -->
+                        <div class="mt-4" style="font-size: 20px;">
+                            <p><strong>Languages:</strong> Hindi, English</p>
+                            <p><strong>Tools:</strong> VS Code, Git</p>
+                            <p><strong>Interest:</strong> I have strong interest in learning new technologies and continuously expanding my skill set.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- resume -->
+
+    <section id="resume" class="py-5" style="background-color: #000; color: #fff;">
+        <div class="container" style="font-size:20px;">
+            <h1 class="text-center mb-4" style="text-decoration:underline;"><b>Resume</b></h1>
+            <p style="font-size: 20px; text-align:center; color: #fff;">I aim to secure a challenging and growth-oriented position where I can contribute meaningfully to the organization by leveraging my skills, dedication, and passion for learning.</p>
+            <div class="text-center">
+                <h1 style="text-decoration:underline">Certifications</h1>
+            </div>
+            <hr class="line" style="height:10px; background-color: white; border: none; margin: 20px 0;">
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            
+                                <h3 style="color:white">2021-2022</h3>
+                                <h2 class="card-title" style="color:yellow">Advanced Diploma In Computer Application. (ADCA)...</h2>
+                                <a href="" class="btn btn-primary mt-3" style="font-size: 20px;">View Certificate</a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2024-2024</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Python Fundamental For Beginners...</h2>
+                            </div>
+                            <a href="https://www.linkedin.com/posts/mohd-tanzeem-908161314_activity-7225399540181286912-4BEN?utm_source=share&utm_medium=member_android&rcm=ACoAAE_BvdgBNIEOn1WQt84xC-biYETrtCak_c8" class="btn btn-primary mt-3" style="font-size: 20px;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2025-2025</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Introduction to java Spring Framework 101...</h2>
+                            </div>
+                            <a href="https:www.linkedin.com/posts/mohd-tanzeem-908161314_introduction-to-java-spring-framework-101-activity-7324304194889269248-R9O1?utm_source=share&utm_medium=member_android&rcm=ACoAAE_BvdgBNIEOn1WQt84xC-biYETrtCak_c8" class="btn btn-primary mt-3" style="font-size: 20px;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2025-2025</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Java Certificate Test-Youtube Course...</h2>
+                            </div>
+                            <a href="https://www.linkedin.com/posts/mohd-tanzeem-908161314_java-certification-knowledgegate-activity-7324057202460184577-9G7v?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAE_BvdgBNIEOn1WQt84xC-biYETrtCak_c8&utm_campaign=whatsapp" class="btn btn-primary mt-3" style="font-size: 20px;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- internship -->
+
+<section id="internship" class="py-5" style="background-color: #000; color: #fff;">
+    <div class="container" style="font-size:20px;">
+       <div class="text-center">
+            <h1 style="text-decoration:underline"><b>Internship</b></h1>
+        </div>
+        <hr class="line" style="height:10px; background-color: white; border: none; margin: 20px 0;">
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 mb-5" style="font-size: 20px;">
+                <div class="card h-100 project-card bg-dark">
+                    <div class="card-body bg-dark bg-opacity-50">
+                        
+                            <h3 style="color:white">April 10<sup>th</sup>2025 To June 10<sup>th</sup>2025</h3>
+                            <h2 class="card-title" style="color:yellow"><b>Java Programming Internship... </b>Internship offer letter received from <b>CODTECH IT SOLUTION PVT. LTD.</b></h2>
+                            <a href="https://www.linkedin.com/posts/mohd-tanzeem-908161314_codtechabritabrsolutions-internship-java-activity-7316680034109292545-y_-B?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAE_BvdgBNIEOn1WQt84xC-biYETrtCak_c8&utm_campaign=copy_link" class="btn btn-primary mt-3" style="font-size: 20px;">View Offer Letter Certificate</a>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-6 mb-5" style="font-size: 20px;">
+                <div class="card h-100 project-card bg-dark mb-3">
+                    <div class="card-body bg-dark bg-opacity-50">
+                        <h3 style="color:white">April 10<sup>th</sup>2025 To June 10<sup>th</sup>2025</h3>
+                        <div style="font-size:20px">
+                            <h2 class="card-title" style="color:yellow">Comming Soon!</h2>
+                        </div>
+                        <a href="" class="btn btn-primary mt-3" style="font-size: 20px;">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Project 3 -->
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" style="background-color: #000; color: #fff;">
+        <div class="container">
+            <h2 class="text-center mb-4"><b style="text-decoration: underline;">My Projects</b></h2>
+            <hr class="line" style="height:10px; background-color: white; border: none; margin: 20px 0;">
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">Online Examination System</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Technology Used :- <b>HTML, CSS, JavaScript, Bootstrap, PHP, MySQL...</b></h2><br><br><br>
+
+                            </div>
+                            <a href="https://onlineexaminationsystem.fast-page.org/index.php" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Project</a>
+                            <a href="#" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Work</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">Smart Contact Manager</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Technology Used :- <b>Java, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, HTML, CSS, JavaScript, Bootstrap, MySql...</b></h2>
+                            </div>
+                            <a href="https://github.com/mohdtanzeem428250/SmartContactManager" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Work</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">Bank Management System</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Technology Used :- <b>Java, Java-Swing, JDBC, MySql</b></h2><br>
+                            </div>
+                            <a href="https://github.com/mohdtanzeem428250/Bank_Management_System" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Work</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- project 4 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-100 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">Student Management System</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Technology Used :- <b>Java, Spring Boot,Spring MVC, MySQL, Basic CURD Operations</b></h2>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Work</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- project 5 -->
+                <div class="col-md-12 mb-5" style="font-size: 20px;">
+                    <div class="card h-80 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">Fun Games</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Technology Used :- <b>HTML, CSS, JavaScript</b></h2>
+                            </div>
+                            <a href="https://mohdtanzeem428250.github.io/project_deploy/index.html" class="btn btn-primary mt-3" style="font-size: 20px;">Click And Started Fun Games</a>
+                            <a href="https://github.com/mohdtanzeem428250/project_deploy" class="btn btn-primary mt-3" style="font-size: 20px;">Visite My Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="qualification" class="py-5" style="background-color: #000; color: #fff;">
+        <div class="container">
+            <h2 class="text-center mb-4"><b style="text-decoration: underline;">Qualifications</b></h2>
+            <hr class="line" style="height:10px; background-color: white; border: none; margin: 20px 0;">
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-70 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2019-2020</h3>
+                            <h3 style="color:yellow">10<sup>th</sup></h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Maulana Azad Inter College (Bareilly)</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 mb-5" style="font-size: 20px;">
+                    <div class="card h-70 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2021-2022</h3>
+                            <h3 style="color:yellow">12<sup>th</sup></h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Maulana Azad Inter College (Bareilly)</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-12 mb-5" style="font-size: 20px;">
+                    <div class="card h-70 project-card bg-dark mb-3">
+                        <div class="card-body bg-dark bg-opacity-50">
+                            <h3 style="color:white">2022-2025</h3>
+                            <h3 style="color:yellow">(BCA) Bachelor Of Computer Application</h3>
+                            <div style="font-size:20px">
+                                <h2 class="card-title" style="color:yellow">Regional College Of Professional Studies & Research (Bareilly)</h2>
+                                <h4 class="card-title" style="color:yellow">Mahatma Jyotiba Phule Rohilkhand University (Bareilly)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+
+
+  
+        <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: #000; color: #fff;">
+        <div class="container text-center">
+            <!-- Section Title -->
+            <h1 class="fw-bold mb-2" style="position: relative; display: inline-block;">
+                <b style="text-decoration: underline;">Contact Me</b>
+            </h1>
+
+            <!-- Contact Items -->
+            <div class="row justify-content-center">
+                <!-- Address -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                        style="width: 80px; height: 80px;">
+                        <i class="fas fa-map-signs text-warning fs-4"></i>
+                    </div>
+                    <div style="font-size:20px;">
+                        <h6 class="mt-3 fw-bold">ADDRESS</h6>
+                    <p class="text-secondary text-white">Bareilly, Uttar Pradesh</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                        style="width: 80px; height: 80px;">
+                        <i class="fas fa-phone text-warning fs-4"></i>
+                    </div>
+                    <div style="font-size:20px;">
+                        <h6 class="mt-3 fw-bold">CONTACT NUMBER</h6>
+                    <p class="text-secondary text-white">+91-6398428250</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                        style="width: 80px; height: 80px;">
+                        <i class="fas fa-paper-plane text-warning fs-4"></i>
+                    </div>
+                    <div style="font-size:20px;">
+                        <h6 class="mt-3 fw-bold">EMAIL ADDRESS</h6>
+                    <p class="text-secondary text-white">mtanzeem115@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Resume -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                        style="width: 80px; height: 80px;">
+                        <i class="fas fa-globe text-warning fs-4"></i>
+                    </div>
+                    <h6 class="mt-3 fw-bold">DOWNLOAD RESUME</h6>
+                    <p><a href="" class="text-warning text-decoration-none" target="_blank">Download
+                            PDF</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4" style="font-size:20px">
+        <p class="mb-2">&copy; 2025 Mohd Tanzeem. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/mohdtanzeem428250" class="text-light mx-2"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/mohd-tanzeem-908161314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-light mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://www.instagram.com/codingseekhoaurseekhao_?igsh=ajc4ZHFtcmV6M3ky" class="text-light mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://www.youtube.com/@CodingSeekhoAurSeekhao-q2i" class="text-light mx-2"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            document.querySelector('nav').classList.toggle('shadow', window.scrollY > 0);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
