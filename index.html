@@ -690,6 +690,21 @@
             <a href="https://www.youtube.com/@CodingSeekhoAurSeekhao-q2i" class="text-light mx-2"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
     </footer>
+    <script>
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+    alert("Right Click Disabled!");
+});
+
+document.addEventListener("keydown", function(e){
+    if (e.keyCode == 123 || 
+       (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
+       (e.ctrlKey && e.keyCode == 85)) {
+        alert("Inspect Not Allowed!");
+        return false;
+    }
+});
+</script>
 
     <script>
         window.addEventListener('scroll', function () {
